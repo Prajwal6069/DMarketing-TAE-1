@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Polls and Surveys</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .question {
+        margin-bottom: 20px;
+    }
+
+    .option {
+        margin-bottom: 10px;
+    }
+
+    .option input[type="radio"],
+    .option input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .submit-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .explanation {
+        font-style: italic;
+        color: #555;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Social Media Polls and Surveys</h1>
+    <form id="poll-form">
+        <div class="question">
+            <label for="age">1. What is your age range?</label><br>
+            <select id="age" name="age">
+                <option value="under18">Under 18</option>
+                <option value="18to25">18 - 25</option>
+                <option value="26to35">26 - 35</option>
+                <option value="36to45">36 - 45</option>
+                <option value="46to55">46 - 55</option>
+                <option value="over55">Over 55</option>
+            </select>
+            <p class="explanation">We use this information to better understand our audience demographics.</p>
+        </div>
+
+        <div class="question">
+            <label>2. Which social media platform(s) do you use regularly? (Select all that apply)</label><br>
+            <div class="option">
+                <input type="checkbox" id="facebook" name="platform" value="Facebook">
+                <label for="facebook">Facebook</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="twitter" name="platform" value="Twitter">
+                <label for="twitter">Twitter</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="instagram" name="platform" value="Instagram">
+                <label for="instagram">Instagram</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="linkedin" name="platform" value="LinkedIn">
+                <label for="linkedin">LinkedIn</label>
+            </div>
+            <p class="explanation">Understanding which platforms our audience uses helps us tailor our social media strategies.</p>
+        </div>
+
+        <div class="question">
+            <label>3. How often do you engage with brands on social media?</label><br>
+            <div class="option">
+                <input type="radio" id="never" name="engagement" value="Never">
+                <label for="never">Never</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="occasionally" name="engagement" value="Occasionally">
+                <label for="occasionally">Occasionally</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="regularly" name="engagement" value="Regularly">
+                <label for="regularly">Regularly</label>
+            </div>
+            <p class="explanation">Understanding how often our audience interacts with brands on social media helps us refine our engagement strategies.</p>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
